@@ -1,1 +1,7 @@
 # SQLAlchemy--Challenge
+
+In this assignment, we were tasked with analyzing some climate data for taking a vacation to Honolulu, Hawaii. 
+
+In the first section of the challenge, we used SQLAlchemy, Pandas, and Matplotlib to gather conclusions from precipitation data about which parts of the year are better for visiting. We started off by creating an engine to the sqlite server to connect to the Hawaii data, refleced the existing database into a new model, and then created a session from Python to the database. We then performed a number of queries to view the precipitation data, some of which included retrieving the last twelve months of data and plotting the results using Matplotlib. We then did some analysis of the stations found in the database and then queried the last twelve months of temperature observations for the most active station found to plot in a histogram. 
+
+In the second section of the challenge, we built a climate app using Flask API that allowed the user to view the precipitation data, station data, temperature observations by date, and the minimum, maximum, and average temperatures for a given start and end date range. The first step was to set up the database, which we did by creating the engine, reflecting the existing database into a new model, and saving references to each table. Then we set up Flask and established the routes that would be available to the user. Each of the routes gives users the option to view specific data from the Hawaii database and make their own conclusions about when they want to visit the island. 
